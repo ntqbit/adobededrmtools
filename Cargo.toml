@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/adobededrmtools",
+    "crates/adobededrmtools-crypto",
+    "adobededrmtools-cli",
+]
+
+[workspace.dependencies]
+adobededrmtools = { path = "crates/adobededrmtools" }
+adobededrmtools-crypto = { path = "crates/adobededrmtools-crypto" }
+anyhow = "1.0.98"
+log = "0.4.27"
+serde = { version = "1.0.219", features = ["derive"] }
