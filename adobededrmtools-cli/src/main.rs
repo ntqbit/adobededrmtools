@@ -26,7 +26,7 @@ struct Cli {
     #[arg(
         long,
         default_value = "account.json",
-        help = "Path to JSON file to read account from"
+        help = "Path to JSON account file"
     )]
     account: String,
 
